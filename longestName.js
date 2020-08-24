@@ -2,6 +2,13 @@
 
 const LongestName = function(instructors) {
   // Put your solution here
+  // console.log(instructors);
+
+  for(let i = 0; i < instructors.length; i++){
+    console.log(instructors[i].first);
+  }
+  
+  
 };
 
 console.log(LongestName([
