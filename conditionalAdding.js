@@ -2,6 +2,7 @@
 
 const conditionalAdding = function(values, condition) {
   // Your code here
+  console.log(values);
 };
 
 console.log(conditionalAdding([1, 2, 3, 4, 5], "even"));
