@@ -8,8 +8,9 @@ const addLargestNumbers = function(data) {
     if(data[i] > maxVal){
       secondMaxVal = maxVal;
       maxVal = data[i];
-    }else if(data[i] > secondMaxVal)
+    }else if(data[i] > secondMaxVal && data[i] < maxVal){
       secondMaxVal = data[i];
+    }
   }
   return maxVal + secondMaxVal;
 };
@@ -17,3 +18,4 @@ const addLargestNumbers = function(data) {
 console.log(addLargestNumbers([1, 10]));
 console.log(addLargestNumbers([1, 2, 3]));
 console.log(addLargestNumbers([10, 4, 34, 6, 92, 2]));
+console.log(addLargestNumbers([-10, -4, -34, -6, -92, -2]));
